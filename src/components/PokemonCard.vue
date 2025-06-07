@@ -7,7 +7,7 @@
     />
     <img v-if="showImage" :src="image" alt="Imagen Pokemon no cargada" />
     <p v-if="!showImage">{{ textPlaceholder }}</p>
-    <p v-if="showImage">{{ text }}</p>
+    <p v-if="showImage">{{ texto }}</p>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
       type: String,
       required: true,
     },
-    text: {
+    texto: {
       type: String,
       required: true,
     },
